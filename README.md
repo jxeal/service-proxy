@@ -45,3 +45,17 @@ Check the standard output of the Go server. The `Director` function logs routing
 
 ### 4. Graceful Shutdown
 Send a `SIGINT` (via `Ctrl+C`) to terminate the process. The server uses context cancellation to stop the background scanner and allows a 5-second timeout window to drain any active HTTP connections before exiting.
+
+## Benchmarks
+
+The performance claim was verified with `wrk` against 3 local backends
+(5ms/50ms/200ms): traffic always routed to the fastest healthy instance,
+failover returned a clean `502` with dashboard `DOWN` → `UP` recovery, added
+overhead measured **+0.39ms at p50**, and sustained throughput hit
+**14,205 req/s with zero errors over 30s** (pooled transport, access log off —
+see findings). Full results, raw logs, and repro steps:
+
+👉 **[docs/BENCHMARK_REPORT.md](docs/BENCHMARK_REPORT.md)** (logs in [docs/logs](docs/logs))
+
+Unit tests: `go test ./...`. Load harness: `cmd/backends` + `cmd/proxyload`
+(a flagged test driver; `main.go` itself is untouched).

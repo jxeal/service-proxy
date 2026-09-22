@@ -1,0 +1,9 @@
+﻿[H[2J=== Distributed Health Monitor & Smart Proxy ===
+Last Scan: 2026-09-22T03:21:10+05:30
+
+TARGET URL              STATUS   LATENCY   
+http://127.0.0.1:9001   âœ… UP     7ms       
+http://127.0.0.1:9002   âœ… UP     52ms      
+http://127.0.0.1:9003   âœ… UP     202ms     
+
+Routing traffic to the fastest healthy service at: http://localhost:8080

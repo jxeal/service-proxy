@@ -1,0 +1,7 @@
+﻿FAILOVER (backends DOWN):
+502 Bad Gateway: No healthy upstream servers available.
+ HTTP:502
+
+RECOVERED (backends restarted):
+backend-9001 HTTP:200
+

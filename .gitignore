@@ -1,0 +1,31 @@
+# Binaries (anchored so cmd/backends etc. source dirs are NOT ignored)
+*.exe
+*.dll
+*.so
+*.dylib
+/service-proxy
+/bin/
+
+# Go build / test artifacts
+*.test
+*.out
+/coverage*.txt
+coverage.html
+
+# Go module cache / vendor (uncomment if you vendor deps)
+# /vendor/
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local benchmark binaries (build to %TEMP% instead)
+/bench/

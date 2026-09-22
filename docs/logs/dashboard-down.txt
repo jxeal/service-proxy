@@ -1,0 +1,12 @@
+﻿
+  C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:316:[H[2J=== Distributed Health Monitor & Smart Proxy 
+===
+  C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:317:Last Scan: 2026-09-22T03:24:05+05:30
+  C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:318:
+  C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:319:TARGET URL              STATUS   LATENCY   
+> C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:320:http://127.0.0.1:9001   ❌ DOWN   0s        
+> C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:321:http://127.0.0.1:9002   ❌ DOWN   0s        
+> C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:322:http://127.0.0.1:9003   ❌ DOWN   0s        
+  C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:323:
+  C:\Users\Sayak\AppData\Local\Temp\opencode\bench\nolog.out:324:Routing traffic to the fastest healthy service at: 
+http://localhost:8080
